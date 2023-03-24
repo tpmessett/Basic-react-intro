@@ -7,13 +7,6 @@ class Flat extends React.Component {
     this.props.selectFlat(this.props.flat)
   }
   render() {
-    // const symbol = (currency) => {
-    //   if (currency === 'EUR') {
-    //     return '€'
-    //   } else {
-    //     return '$'
-    //   }
-    // }
     const title = `${symbol(this.props.flat.priceCurrency)}${this.props.flat.price} - ${this.props.flat.name}`
     const style = {
       backgroundImage: `url('${this.props.flat.imageUrl}')`
