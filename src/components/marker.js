@@ -1,16 +1,16 @@
 import React from "react";
 import "./marker.css"
-
+import symbol from "../services/symbol.js"
 class Marker extends React.Component {
 
   render() {
-    const symbol = (currency) => {
-      if (currency === 'EUR') {
-        return '€'
-      } else {
-        return '$'
-      }
-    }
+    // const symbol = (currency) => {
+    //   if (currency === 'EUR') {
+    //     return '€'
+    //   } else {
+    //     return '$'
+    //   }
+    // }
     let classes = "marker"
     if (this.props.selected) {
       classes += " selected"

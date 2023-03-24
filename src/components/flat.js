@@ -1,18 +1,19 @@
 import React from "react";
 import "./flat.css"
+import symbol from "../services/symbol.js"
 
 class Flat extends React.Component {
   handleClick = () => {
     this.props.selectFlat(this.props.flat)
   }
   render() {
-    const symbol = (currency) => {
-      if (currency === 'EUR') {
-        return '€'
-      } else {
-        return '$'
-      }
-    }
+    // const symbol = (currency) => {
+    //   if (currency === 'EUR') {
+    //     return '€'
+    //   } else {
+    //     return '$'
+    //   }
+    // }
     const title = `${symbol(this.props.flat.priceCurrency)}${this.props.flat.price} - ${this.props.flat.name}`
     const style = {
       backgroundImage: `url('${this.props.flat.imageUrl}')`
